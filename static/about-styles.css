@@ -1,0 +1,29 @@
+#about
+{
+  margin: 10vmin;
+  min-width: 45vw;
+  height: auto;
+  padding-left: 40vw;
+  padding-top: 4vh;
+  text-align: center;
+}
+
+img
+{
+  border-radius: 20%;
+  max-height: 40vh;
+  max-width: 25vw;
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 20vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  float: left;
+}
+
+.container {
+  align-items: center;
+  float: left;
+}

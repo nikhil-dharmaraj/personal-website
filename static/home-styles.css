@@ -1,0 +1,39 @@
+.intro {
+  margin-left: 15vmax;
+  margin-right: 15vmax;
+  font-size: 2vmin;
+  display: inline-block;
+}
+
+.list {
+	text-align: center;
+	font-size: 2vmin;
+}
+
+img
+{
+  border-radius: 20%;
+  height: 43vmin;
+  padding-bottom: 1%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.info
+{
+    padding: 10px;
+}
+
+h1, b, li
+{
+    color: #5d6475;
+}
+
+ul
+{
+    padding-top: 0px;
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+}

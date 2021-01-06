@@ -1,0 +1,71 @@
+.item{
+    font-family: "Helvetica Neue";
+    white-space: nowrap;
+    width: auto;
+    display: block;
+    align-items: center;
+    margin-right: 5vw;
+    min-width: 20vw;
+}
+
+.item:hover {
+    background-color: #b8e2f2;
+    border-top: 1px outset #d0d0d0;
+}
+
+.desc{
+    font-size: 1.5vmin;
+    text-align: center;
+}
+
+.div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.category
+{
+    font-size: 3.2vmin;
+    color: #5d6475;
+    font-family: "Helvetica Neue";
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-align: left;
+}
+
+.cat {
+    display: block;
+    margin-left: 18%;
+}
+
+.courses {
+    text-align: center;
+    font-size: 1.7vmin;
+    display: inline-block;
+    color: #5d6475;
+
+}
+
+.courselist {
+	text-align: left;
+	font-size: 1.7vmin;
+	color: #5d6475;
+	font-family: "Helvetica Neue";
+	padding-right: 5vw;
+	white-space: nowrap;
+}
+
+#resume {
+  left: 0;
+  font-size: 1.2vmax;
+}
+
+#note {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.7vmin;
+}
+
+#body {
+    float: left;
+}

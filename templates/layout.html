@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% block start %}{% endblock %}
+<html lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/layout-styles.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="./static/ND.png" />
+        {% block head %}{% endblock %}
+    </head>
+
+    <body class="lead">
+        <main class="content">
+            <div id="particles-js"></div>
+            <div id="typewriter">
+                <h1 class="display-4" id="header"></h1>
+            </div>
+            <div class="menu">
+              <ul class="menu-list" data-offset="10">
+                <a class="navlink" href="/">
+                    <li class="menu-list-item" data-offset="20">
+                      Home
+                      <span class="mask"><span>Home</span></span>
+                      <span class="mask"><span>Home</span></span>
+                    </li>
+                </a>
+                <a class="navlink" href="/about">
+                    <li class="menu-list-item" data-offset="16">
+                      About
+                      <span class="mask"><span>About</span></span>
+                      <span class="mask"><span>About</span></span>
+                    </li>
+                </a>
+                <a class="navlink" href="/portfolio">
+                    <li class="menu-list-item" data-offset="12">
+                      Portfolio
+                      <span class="mask"><span>Portfolio</span></span>
+                      <span class="mask"><span>Portfolio</span></span>
+                    </li>
+                </a>
+                <a class="navlink" href="/contact">
+                    <li class="menu-list-item" data-offset="8">
+                      Contact
+                      <span class="mask"><span>Contact</span></span>
+                      <span class="mask"><span>Contact</span></span>
+                    </li>
+                </a>
+              </ul>
+            </div>
+            <div id="body">
+                {% block body %}{% endblock %}
+            </div>
+        </main>
+        
+        <footer id="designed">
+            Designed using <a class="pagelink" href="https://vincentgarreau.com/particles.js/">particles.js</a>, <a class="pagelink" href="https://safi.me.uk/typewriterjs/">Typewriter</a>,
+            <a class="pagelink" href="https://codepen.io/bosworthco/pen/RjBvgw">Perspective Split Text Menu</a>, <a class="pagelink" href="https://nanogallery2.nanostudio.org/">nanogallery2</a>,
+            and <a class="pagelink" href="https://getbootstrap.com/">Bootstrap</a>.
+            <div id="socmed">
+                <!-- add social media icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- social media icons -->
+                <a href="https://www.facebook.com/nikhildharmaraj01/" class="fa fa-facebook pagelink"></a>
+                <a href="https://twitter.com/nikdharmaraj" class="fa fa-twitter pagelink"></a>
+                <a href="https://www.linkedin.com/in/nikhil-dharmaraj/" class="fa fa-linkedin pagelink"></a>
+                <a href="http://instagram.com/nikhil.dharmaraj" class="fa fa-instagram pagelink"></a>
+                <a href="https://github.com/nikhil-dharmaraj" class="fa fa-github pagelink"></a>
+            </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="https://cdn.rawgit.com/orling/grapheme-splitter/b4500feb/index.js"></script>
+        <script type="text/javascript">
+            var app = document.getElementById('header');
+            
+            const stringSplitter = string => {
+              const splitter = new GraphemeSplitter();
+              return splitter.splitGraphemes(string);
+            };
+            
+            var typewriter = new Typewriter(app, {
+                loop: true,
+                skipAddStyles: true,
+                stringSplitter
+            });
+            typewriter.typeString('NIKHIL DHARMARAJ')
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString("निखिल धर्मराज")
+                 .pauseFor(1500)
+                 .deleteAll()
+                .start();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script type="text/javascript">
+            particlesJS.load('particles-js', '/static/particles.json', function() {
+              console.log('callback - particles.js config loaded');
+            });
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var url = document.location
+
+                var menuItem = $('.menu-list a').filter(function() {
+                    return this.href == url;
+                }).css("background-color", "lime");
+
+            });
+
+        </script>
+
+        {% block script %}{% endblock %}
+
+    </body>
+</html>

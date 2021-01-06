@@ -1,0 +1,264 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+    <title>Portfolio | Nikhil Dharmaraj</title>
+    <link href="/static/portfolio-styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+
+{% endblock %}
+
+{% block body %}
+    <div class="cat">
+        <p class="category">PROJECTS I'VE WORKED ON</p>
+        <div class="div">
+            <p class="courses">
+                <ul class="courselist">
+                    <li><a class="pagelink" href="https://innovationlabs.harvard.edu/current-team/source-resource-app-for-homelessness/">Harvard ShelterHacks</a> — Mobile app for the unhoused in Cambridge to identify service facilities (Nov 2020 - Present)</li>
+                    <li><a class="pagelink" href="https://www.littleblacklibrary.com/">Little Black Library</a> — Application project to create community around readers of Black radical thought (Nov 2020 - Present)</li>
+                    <li><a class="pagelink" href="https://github.com/nikhil-dharmaraj/decolonized">DE-Colonized</a> — Web data visualization of decolonization in the 20th century (Dec 2019)</li>
+                </ul>
+            </p>
+        </div>
+            <div>
+            <p id="note">And, of course (at risk of getting a bit recursive)...<a class="pagelink" href="https://github.com/nikhil-dharmaraj/personal-website">this website!</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="cat">
+        <p class="category">TECHNICAL EXPERIENCES</p>
+        <div class="div">
+            <span class="item" id="slsc">
+                <div id="slsc-n" onclick="func('https://stoplapdspying.org/');">
+                    <a href="/static/slsc.png">Stop LAPD Spying Coalition</a>
+                </div>
+                <p class="desc"> Data Scientist/Web Developer <br> Stop LAPD Spying Coalition <br> Jan 2021 - Present <br> [Skills: NLP, Data Visualization, Front-End Development] </p>
+            </span>
+            <span class="item" id="yx">
+                <div id="yx-n" onclick="func('http://theyurixfoundation.org/');">
+                    <a href="/static/yx.png">The YX Foundation</a>
+                </div>
+                <p class="desc"> Founding Member & Programming Lead <br> The YX Foundation <br> Sep 2020 - Present <br> [Skills: Project Management, AI, Critical Race Theory] <br> <a class="pagelink" href="https://medium.com/the-yx-foundation-journal">The YX Foundation Journal, Vol I</a></p>
+            </span>
+            <span class="item" id="cs50">
+                <div id="cs50-n" onclick="func('https://cs50.harvard.edu//');">
+                  <a href="/static/seas.png">CS50</a>
+                </div>
+                <p class="desc"> Teaching Fellow <br> Harvard CS50 <br> Sep 2020 - Present <br> [Skills: Communication, CS Fundamentals] <br> <a class="pagelink" href="https://cs50.harvard.edu/hls/2021/winter/seminars/#algorithmic-bias--surveillance-capitalism-critical-eyes-towards-race-gender--identity">Seminar Description — CS50 for JDs (Winter 2021)</a></p>
+            </span>
+        </div>
+        <div class="div">
+            <span class="item" id="clf">
+                <div id="clf-n" onclick="func('https://cambridgelocalfirst.org/');">
+                  <a href="/static/clf.png">Cambridge Local First</a>
+                </div>
+                <p class="desc"> Team Lead (Under COVID-19 Response Case Team)<br> Harvard College Data Analytics Group <br> April 2020 - May 2020 <br> [Skills: Data Analytics, Project Management] <br> <a class="pagelink" href="https://www.harvardanalytics.org/insights/cambridge-local-first-team-develops-interface-amp-visualizations-to-assist-local-businesses">HCDAG Final Report</a></p>
+            </span>
+        </div>
+    </div>
+    <hr>
+    <div class="cat">
+        <p class="category">INTERNSHIPS</p>
+        <div class="div">
+        	<span class="item" id="rai">
+                <div id="rai-n" onclick="func('https://www.radicalai.org/');">
+                  <a href="/static/rai.png">The Radical AI Podcast</a>
+                </div>
+                <p class="desc"> Communications Intern <br> The Radical AI Podcast <br> Jan 2021 - Present <br> [Skills: Research, Community Outreach, Communications] <br> </p>
+            </span>
+            <span class="item" id="ameelio">
+                <div id="ameelio-n" onclick="func('https://ameelio.org/#/');">
+                  <a href="/static/ameelio.png">Ameelio</a>
+                </div>
+                <p class="desc"> Software Engineering Intern <br> Crawlers & Letters-Mobile Teams, Ameelio <br> May 2020 - Aug 2020 <br> [Skills: Web Scraping, React Native] <br> <a class="pagelink" href="https://jjcf.org/wp-content/uploads/2020/09/NikhilFinal-Report.pdf">JJCF Final Report</a></p>
+            </span>
+            <span class="item" id="lime">
+                <div id="lime-n" onclick="func('https://www.li.me/en-us/home')">
+                  <a href="/static/lime.png">Lime</a>
+                </div>
+                <p class="desc"> Software Engineering Intern <br> Rider Team, Lime <br> June 2019 - Aug 2019 <br> [Skills: Full-Stack Dev, Swift, Ruby on Rails] </p>
+            </span>
+        </div>
+    </div>
+    <hr>
+    <div class="cat">
+        <p class="category">RESEARCH EXPERIENCES</p>
+        <div class="div">
+            <div class="item" id="xpmethod" onclick="func('https://xpmethod.plaintext.in/')">
+                <div id="xpmethod-n">
+                    <a href="/static/xpmethod.png">XPMethod</a>
+                </div>
+                <p class="desc"> Digital Humanites Research Associate <br> <i>The Future That Was</i>, Columbia XPMethod Group <br> June 2020 - Present <br> [Skills: OCR, NLP, Data Visualization] <br> <a class="pagelink" href="https://github.com/nikhil-dharmaraj/thefuturethatwas">GitHub Repo</a></p>
+            </div>
+            <div class="sep">
+            </div>
+            <div class="item" id="radcliffe" onclick="func('https://www.radcliffe.harvard.edu/')">
+                <div id="radcliffe-n">
+                  <a href="/static/radcliffe.png">Radcliffe Institute</a>
+                </div>
+                <p class="desc"> Radcliffe Research Partner <br> <i>Representation and Materialization of Interdisciplinary Matter</i> <br> Sep 2019 - May 2020 <br> [Skills: Lit Reviews, Editing] <br> <a class="pagelink" href="https://docs.google.com/document/d/1znQnzihO0euL8oYRt0H6knfpPd1snxNtk31syTSIxBg/edit?usp=sharing">Sample Literature Review</a></p>
+            </div>
+            <div class="sep">
+            </div>
+            <div class="item" id="metalab" onclick="func('https://metalabharvard.github.io/')">
+                <div id="metalab-n">
+                  <a href="/static/metalab.png">metaLAB (at) Harvard</a>
+                </div>
+                <p class="desc"> Research Intern <br> <a class="pagelink" href="https://metalabharvard.github.io/projects/laughingroom/">The Laughing Room</a> & <a class="pagelink" href="https://metalabharvard.github.io/projects/morallabyrinth/">Moral Labyrinth</a>, metaLAB (at) Harvard <br> Jul 2018 - May 2018 <br> [Skills: Lit Reviews, Neural Networks (Keras), Web Dev] <br> <a class="pagelink" href="https://news.harvard.edu/gazette/story/2018/09/harvards-metalab-attends-festival-on-error-the-art-of-imperfection/">Exhibition at Ars Electronica (2018)</a> <br> <a class="pagelink" href="https://www.cambridgema.gov/cpl/calendarofevents/view.aspx?guid=%7B72A7E65D-E699-49B0-BDF6-CCC0F2141A89%7D&start=20181116T140000&end=20181116T170000">Display at Cambridge Public Library (2019)</a> <br> Speaker, <a class="pagelink" href="https://vimeo.com/315515322">Is AI Laughing At Us?" Panel (2019)</a></p>
+            </div>
+        </div>
+        <div class="div">
+            <div class="item" id="hyperstudio" onclick="func('http://hyperstudio.mit.edu/')">
+                <div id="hyperstudio-n">
+                  <a href="/static/hyperstudio.png">MIT HyperStudio</a>
+                </div>
+                <p class="desc"> Research Intern <br> ArtBot Project, HyperStudio </a> <br> Jul 2018 - May 2018 <br> [Skills: iOS Development, Machine Learning] </p>
+            </div>
+            <div class="sep">
+            </div>
+            <div class="item" id="cmu" onclick="func('http://www.cs.cmu.edu/~coral/')">
+                <div id="cmu-n">
+                  <a href="/static/cmu.png">CMU CORAL Lab</a>
+                </div>
+                <p class="desc"> Research Intern <br> CMU CORAL Robotics Lab <br> Jul 2017 - May 2017 <br> [Skills: Data Visualization, Twitter API] <br> </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="cat">
+        <p class="category">OTHER EXPERIENCES</p>
+        <div class="div">
+            <div class="item" id="paf" onclick="func('https://advising.college.harvard.edu/peer-advising-0')">
+                <div id="paf-n">
+                    <a href="/static/harv.png">Advising Programs Office</a>
+                </div>
+                <p class="desc"> Peer Advising Fellow <br> Harvard College Advising Programs Office <br> Sep 2020 - Present </p>
+            </div>
+            <div class="item" id="tg" onclick="func('https://college.harvard.edu/admissions')">
+                <div id="tg-n">
+                    <a href="/static/harv.png">Harvard Admissions Office</a>
+                </div>
+                <p class="desc"> Admissions Tour Guide <br> Harvard College Admissions Office <br> Nov 2019 - Present </p>
+            </div>
+            <div class="sep">
+            </div>
+            <div class="item" id="1947" onclick="func('https://www.1947partitionarchive.org/')">
+                <div id="1947-n">
+                  <a href="/static/1947.png">1947 Partition Archive</a>
+                </div>
+                <p class="desc"> Citizen Historian <br> 1947 Partition Archive <br> July 2020 - Present <br> <a class="pagelink" href="https://1947partitionarchive.app.box.com/s/zjbvpo4z8qa67eobidedgtizuvdppil7">Citizen Historian Certificate</p></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="cat">
+        <p class="category">COURSEWORK</p>
+        <div class="div">
+            <p>FALL <br> 2020</p>
+            <p class="courses">
+                <ul class="courselist">
+                    <li>STAT 110: Intro to Probability</li>
+                    <li>MIT 6.840: Theory of Computation</li>
+                    <li>GENED 1036: Global Feminisms</li>
+                    <li>HIST 12E: Migrant Geographies - Between Asia & the US in the 20th Century</li>
+                    <li>COMPLIT 171: Counter-Imperialism and Asian-African Literatures</li>
+                </ul>
+            </p>
+            <p>SPRING <br> 2020</p>
+            <p class="courses">
+                <ul class="courselist">
+                    <li>MATH 21B: Linear Algebra & Differential Equations</li>
+                    <li>GENED 1046: Evolving Morality - From Primordial Soup to Superintelligent Machines</li>
+                    <li>HUM 10B: A Humanities Colloquium (From Joyce to Homer)</li>
+                    <li>SANSKRIT 101B: Elementary Sanskrit, Cont'd. </li>
+                </ul>
+            </p>
+        </div>
+        <div class="div">
+            <p>FALL <br> 2019</p>
+            <p class="courses">
+                <ul class="courselist">
+                    <li>CS50: Intro to Computer Science</li>
+                    <li>ANTHRO 1926: Is More Money A Good Thing Everywhere? Anthropological Approaches to the Economy</li>
+                    <li>HUM 10A: A Humanities Colloquium (From Homer to Garcia Marquez)</li>
+                    <li>SANSKRIT 101A: Elementary Sanskrit</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="cat">
+        <p class="category">AWARDS & PUBLICATIONS</p>
+        <div class="div">
+            <p>AWARDS</p>
+            <p class="courses">
+                <ul class="courselist">
+                    <li>John Harvard Scholar, October 2020</li>
+                    <li>Silicon Valley Engineering Council Grant Recipient, May 2019</li>
+                </ul>
+            </p>
+            <p>PUBLICATIONS</p>
+            <p class="courses">
+                <ul class="courselist">
+                        <li><a class="pagelink" href="https://issuu.com/theharkerschool/docs/nikhildharmaraj_mitra"><i>The Evolution of Evolution</i></a> (Near/Mitra Scholar) — published in <a class="pagelink" href="https://indd.adobe.com/embed/96ff460c-5353-4a99-ab22-a038b535bb8f?startpage=1&allowFullscreen=true">Harvard Synthesis </a> (Winter 2020), May 2019</li>
+                    </ul>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <a id="resume" href="https://drive.google.com/file/d/1EcWLoK5MMjnvB93IEqyTvjCK_q8l9-cH/view?usp=sharing" class="pagelink">Resume</a>
+    </div>
+    <hr>
+
+{% endblock %}
+
+{% block script %}
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <script>
+
+        function setupGallery(id)
+        {
+            $(id).nanogallery2({
+              galleryTheme: {
+                thumbnail : { borderRadius: '50%', titleColor: '#5d6475', borderColor: 'darkgray', titleColor: '#fff'}
+              },
+             thumbnailHoverEffect2: "image_blur_0px_10px_1000|label_opacity_0_1_1000|label_font-size_1.5em_2em_2000",
+             thumbnailAlignment: "center",
+             thumbnailLevelUp: true,
+             thumbnailOpenImage: false,
+             thumbnailOpenInLightox : false,
+             thumbnailHeight:  "100",
+             thumbnailWidth:   "100",
+             thumbnailLabel: {
+                position: 'overImageOnMiddle',
+                titleMultiLine: true,
+                titleFontSize: '0.6vw'
+             },
+             thumbnailGutterWidth: '150'
+            });
+        }
+
+        setupGallery("#xpmethod-n");
+        setupGallery("#ameelio-n");
+        setupGallery("#lime-n");
+        setupGallery("#radcliffe-n");
+        setupGallery("#metalab-n");
+        setupGallery("#hyperstudio-n");
+        setupGallery("#cmu-n");
+        setupGallery("#clf-n");
+        setupGallery("#cs50-n");
+        setupGallery("#yx-n");
+        setupGallery("#paf-n");
+        setupGallery("#tg-n");
+        setupGallery("#1947-n");
+        setupGallery("#slsc-n");
+        setupGallery("#rai-n");
+
+        function func(url) {
+            window.location.href = url
+        }
+    </script>
+
+{% endblock %}
