@@ -43,7 +43,6 @@
     font-size: 1.7vmin;
     display: inline-block;
     color: #5d6475;
-
 }
 
 .courselist {
@@ -51,8 +50,8 @@
 	font-size: 1.7vmin;
 	color: #5d6475;
 	font-family: "Helvetica Neue";
-	padding-right: 5vw;
 	white-space: nowrap;
+	padding-right: 5vw;
 }
 
 #resume {
